@@ -1,2 +1,2 @@
 # FangTe
-This is a xiaochenegxu
+这是一个方特游玩小程序
