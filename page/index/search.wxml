@@ -1,0 +1,124 @@
+<view class="container">
+	<view class="header">
+		<view class="search">
+			<image class="icon" src="/imgs/index/icon_search.png"/>
+			<input bindinput="inputSearch" placeholder="{{placeholder}}" auto-focus/>
+		</view>
+		<button class="yellow {{searchWords.length?'':'disabled'}}" size="mini" hover-class="hover" loading="" plain="" disabled="{{!searchWords.length}}"
+				bindtap="doSearch">搜索
+		</button>
+	</view>
+	<view class="main">
+    <view class="search-box">
+        <input class="search-input" placeholder="热点推荐" value="{{value}}" bindinput="searchInput" />
+       <!--<icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>--> 
+        <text class="search-btn" wx:if="{{showResult}}" bindtap="cancelSearch">取消</text>
+    </view>
+    <view class="result" wx:if="{{showResult}}">
+        <view class="result-box" wx:if="{{result.length > 0}}">
+            <view class="result-list" wx:for="{{result}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <image src="{{item.thumb}}"></image>
+                    <view class="result-text">
+                        <text>{{item.title}}</text>
+                    </view>
+                    <view class="result-text">
+                        <text>￥ {{item.price}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="result-null" wx:else>
+            <view class="null-tips">Oh~~ 搜索结果为空！</view>
+            <view class="recommend-title">
+                <text>相关推荐</text>
+            </view>
+            <view class="recommend-box">
+                <view class="result-list" wx:for="{{result}}" wx:key="index">
+                    <navigator url="{{item.url}}">
+                        <image src="{{item.thumb}}"></image>
+                        <view class="result-text">
+                            <text>{{item.title}}</text>
+                        </view>
+                        <view class="result-text">
+                            <text>￥ {{item.price}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="init-page" wx:else>
+        <view wx:if="{{history.length > 0}}">
+            <view class="title">
+                <text>搜索记录</text>
+            </view>
+            <view class="tags">
+                <text wx:for="{{history}}" wx:key="index" data-text="{{item}}" bindtap="keywordHandle">{{item}}</text>
+            </view>
+        </view>
+        <view class="title">
+            <text>方特城堡</text>
+				</view>
+				<view class="title">
+            <text>火流星</text>
+				</view>
+				<view class="title">
+            <text>逃出恐龙谷</text>
+				</view>
+				<view class="title">
+            <text>逃出恐龙谷</text>
+				</view>
+				<view class="title">
+            <text>暴风眼</text>
+				</view>
+				<view class="title">
+            <text>海盗船</text>
+        </view>
+        <view class="tags">
+            <text wx:for="{{hot}}" wx:key="index" data-text="{{item}}" bindtap="keywordHandle">{{item}}</text>
+        </view>
+    </view>
+
+    <view class="keywords" wx:if="{{showKeywords}}">
+        <view class="keywords-item" wx:for="{{keywords}}" wx:key="index" data-text="{{item}}" bindtap="keywordHandle">{{item}}</view>
+    </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<view id="result" class="result" hidden="{{!showResult}}">
+		<view class="filters">
+			<view class="filter {{filterId==1?'active':''}}" data-id="1" bindtap="tapFilter">综合排序<text class="v">↓</text>
+			</view>
+			<view class="filter {{filterId==2?'active':''}}" data-id="2" bindtap="tapFilter">销量最高<text class="v">↓</text>
+			</view>
+			<view class="filter {{filterId==3?'active':''}}" data-id="3" bindtap="tapFilter">距离最近<text class="v">↓</text>
+			</view>
+		</view>
+		<scroll-view scroll-y="true">
+			<view class="shop" wx:for="{{shops}}" wx:key="id">
+				<navigator url="/page/shop/shop?id={{item.id}}">
+					<image src="{{item.img}}"/>
+				</navigator>
+			</view>
+			<view class="loading">努力加载中…</view>
+      <!-- <view class="loading">还未开发...</view> -->
+		</scroll-view>
+	</view>
+</view>

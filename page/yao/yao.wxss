@@ -1,0 +1,31 @@
+/* pages/yao/yao.wxss */
+/*.ziti {
+  font-size: 13pt;
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 15rpx;
+  color: rgb(226, 15, 103);
+}*/
+.login-help-img {
+  width: 250pt;
+  height: 100pt;
+  margin: 0 5rpx;
+}
+.ziti {
+  font-size: 25pt;
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 15rpx;
+  color: rgb(226, 15, 103);
+  text-align: center;
+}
+.confirm-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #f73f94;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  margin: 30rpx 3%;
+}

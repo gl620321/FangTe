@@ -1,0 +1,143 @@
+<view class="container">
+	<view class="section">
+		<view class="line judgement">餐品点餐</view>
+	</view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view class="section__title">是否预约:</view>
+      </view>
+     <!-- <input name="input" placeholder="您的称呼" />
+    </view>
+    <view class="section">
+      <view class="section__title">联系方式:</view>
+      <input name="input1" placeholder="您的联系方式" />
+    </view>-->
+    <view class="section section_gap">
+      <view class="section__title">实时动态人数</view>
+      <slider name="slider" show-value></slider>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">餐品</view>
+      <checkbox-group name="checkbox">
+        <label>
+          <checkbox value="checkbox1" />
+
+          双层脆鸡堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox2" />
+          麦香鸡腿堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;15元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox3" />
+          麦辣鸡腿汉堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;14元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          不素之霸双层牛堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;19.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         安格斯厚牛培根堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;18元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         板烧翅乐四件套/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;38元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         巨无霸薯条四件套/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;88元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         就爱吃鸡双人餐/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;49.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+        三人分享餐/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;66元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         双层吉士汉堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;19.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          双层深海鳕鱼堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          原味板烧鸡腿堡/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          薯条/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          麦香鸡块(5块)/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          玉米杯/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         美味鲜蔬杯/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          麦香鸡块(5块)/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          圆筒冰淇淋/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          麦旋风奥利奥口味/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          菠萝派（红豆派、香芋派）/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          可口可乐（雪碧、橙汁、绿茶、红茶）/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         猪柳蛋麦满分/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          吉士蛋麦满分/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         双层原味板烧鸡腿蛮分/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         皮蛋瘦肉粥/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          脆香油条/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          鲜美烟肉早晨全餐/份<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         椰椰奶冻/爆爆珠<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;9.9元</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="btn-area">
+      <button form-type="submit">确认付款</button>
+      <!-- <button form-type="reset">Reset</button> -->
+    </view>
+  </form>
+
+</view>

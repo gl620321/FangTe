@@ -1,0 +1,45 @@
+<view class="tu">
+ <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<view class="container">
+	<view class="header {{scrollDown?'scrolled':''}}">
+		<!-- <view class="location ellipsis" bindtap="toNearby">
+			<image class="icon" src="/imgs/index/icon_location.png"/>
+			{{address}}
+		</view> -->
+		<view class="search" bindtap="tapSearch">
+			<image class="icon" src="/imgs/index/icon_search.png"/>
+			<i class="fa fa-home"></i>
+			搜索
+		</view>
+	</view>
+
+	<scroll-view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+		<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+			<block wx:for="{{banners}}" wx:key="id">
+				<swiper-item>
+					<image bindtap="tapBanner" data-id="{{index}}" src="{{item.img}}"/>
+				</swiper-item>
+			</block>
+		</swiper>
+
+	
+
+		<view id="nearby" class="section section-big nearby">
+		
+			 <view class="shop clearfix" wx:for="{{shops}}" wx:key="id">
+				<navigator url="/page/works/works?id={{item.id}}">
+        <!-- shop?id={{item.id}} -->
+					<image src="{{item.img}}" class="iimg"/>
+          <view class="t1">{{item.name}}</view>
+					<view class="t2">预约</view>
+				
+				</navigator>
+			</view> 
+		</view>  
+		<!-- <view class="loading">努力加载中…</view> -->
+	</scroll-view>
+ <!--  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>-->
+</view>

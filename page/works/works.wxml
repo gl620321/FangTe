@@ -1,0 +1,179 @@
+<view class="container">
+	<view class="section">
+		<view class="line judgement">项目体验</view>
+	</view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view class="section__title">是否预约:</view>
+      </view>
+     <!-- <input name="input" placeholder="您的称呼" />
+    </view>
+    <view class="section">
+      <view class="section__title">联系方式:</view>
+      <input name="input1" placeholder="您的联系方式" />
+    </view>-->
+    <view class="section section_gap">
+      <view class="section__title">当天体验人数</view>
+      <slider name="slider" show-value></slider>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">预约时间</view>
+      <checkbox-group name="checkbox">
+        <label>
+          <checkbox value="checkbox1" />
+
+          2020年12月28日 09:00-10:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox2" />
+          2020年12月28日 10:00-11:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox3" />
+          2020年12月28日 11:00-12:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 12:00-13:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 13:00-14:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 14:00-15:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 15:00-16:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 16:00-17:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 17:00-18:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          2020年12月28日 18:00-19:00<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        </label>
+       <!--<label>
+          <checkbox value="checkbox4" />
+          逃出恐龙谷
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          暴风眼
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         电影魔术大揭秘
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          双层木马
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          丛林故事
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          空中飞舞
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         海盗船
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          星球达人秀
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          聊斋
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          疯狂汉堡
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         嘟比汉堡
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          临水餐厅
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          科幻披萨
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         美食总动员
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          情牵一线牛肉面
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          火流星面馆
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          科幻餐厅
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         海景茶餐厅
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          梦幻王国餐厅
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          熊记汉堡
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          爱尚披萨王
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          东方美食城
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         中华美食街
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          牛聋子粉面馆
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          童梦餐厅
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+          苗家鱼粉
+        </label>
+        <label>
+          <checkbox value="checkbox4" />
+         文和友小龙虾
+        </label>-->
+      </checkbox-group>
+    </view>
+    <view class="btn-area">
+      <button form-type="submit">确认预约</button>
+      <!-- <button form-type="reset">Reset</button> -->
+    </view>
+  </form>
+
+</view>

@@ -1,0 +1,15 @@
+<!--page/set/set.wxml-->
+<!--pages/help/help.wxml-->
+<!--<text class="ziti">设置</text>-->
+<button>账号与安全</button>
+<button>青少年模式</button>
+<button>新消息提醒</button>
+<button>勿扰模式</button>
+<button>聊天</button>
+<button>隐私设置</button>
+<button>通用</button>
+<button>关于方特游玩助手</button>
+<button>用户反馈</button>
+<button><text class="ziti">退出</text></button>
+<!--<image class="login-help-img" src="/imags/tupian/map.png"></image>-->
+

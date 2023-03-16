@@ -1,0 +1,48 @@
+<view class="container">
+	<view class="header">
+		<!-- <image class="avatar" src="{{userInfo.avatarUrl}}" />
+		<view class="nickname">{{userInfo.nickName}}</view> -->
+  <open-data type="userAvatarUrl" class='header .icon'> </open-data>
+ 
+    <!-- <open-data type="userNickName"></open-data> -->
+    <!-- <image src="{{avataUrl}}"></image>
+    <text>{{nick}}</text>
+    <button bindtap="wxLogin">登录</button> -->
+    <view class="table">
+      <view class="tr" >
+          <text class="th th2 back" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方特打卡</text>
+          <text class="th th2 back" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关注</text>
+          <text class="th th2 back" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粉丝</text>
+      </view>
+    </view>
+	</view>
+	<view class="section">
+      <view class="table">
+      <view class="tr">
+          <button class="th th1"><image class='icon' src='/imgs/mine/1.jpg'></image>
+          <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          我的记录</button>
+          <button class="th th2"><image class='icon' src='/imgs/mine/2.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>我的展示</button>
+      </view>
+    </view>
+    <view class="table">
+      <view class="tr">
+          <button class="th th1"><image class='icon' src='/imgs/mine/3.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>我的收藏</button>
+          <button class="th th2"><image class='icon' src='/imgs/mine/4.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>个人主页</button>
+      </view>
+    </view>
+    <button class='text' bindtap="bindtojinian"><image class='icon' src='/imgs/mine/7.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>纪念店推荐</button>
+  
+		<button class='text'><image class='icon' src='/imgs/mine/5.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>我的作品</button>
+    <button class='text' bindtap="bindtoyao"><image class='icon' src='/imgs/mine/6.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>联系客服</button>
+	</view>
+	<view class="section">
+	<button class='text'><image class='icon' src='/imgs/mine/8.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>邀请好友</button>
+  <button class='text'  bindtap="bindtoset"><image class='icon' src='/imgs/mine/9.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>设置</button>
+		<!-- <button class="line judgement">{{tel}}</button>     -->
+	</view>
+	<view class="section">
+			<button class='text'><image class='icon' src='/imgs/mine/10.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>帮助中心</button>
+      	<button class='text'><image class='icon' src='/imgs/mine/11.jpg'></image><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>关于我们</button>
+	</view>
+</view>

@@ -1,0 +1,14 @@
+.cart_content{
+  margin: 20rpx 15rpx;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 6rpx 18rpx;
+}
+form{
+  font-size: 30rpx;
+}
+button{
+  font-size: 35rpx;
+  background-color: #FF6464;
+  color: #fff;
+}

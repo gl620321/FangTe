@@ -1,0 +1,91 @@
+.header {
+	background: #67d1f1c2;
+	padding: 30rpx;
+}
+.header .icon{
+	display: block;
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	border: 2px solid #feef67f1;
+}
+.header .avatar {
+	display: block;
+	margin: 0 auto;
+	width: 50rpx;
+	height: 50rpx;
+	border-radius: 50%;
+	border: 2px solid #fee76754;
+}
+.header .nickname {
+	color: #000;
+	font-size: 22px;
+	line-height: 2.4;
+}
+
+.section {
+  background-color:white;
+	padding: 0;
+	color: #2e2e2e;
+	font-size: 15rpx;
+}
+.section .line {
+	margin-left: 30rpx;
+	padding-right: 30rpx;
+	line-height: 3;
+	border-bottom: 1px solid #efefef00;
+}
+.section .line:last-child {
+	border-bottom: none;
+}
+.section .line:before {
+	content: '>';
+	float: right;
+	color: rgba(170, 170, 170, 0);
+	margin-left: 20rpx;
+}
+.section .line .tl {
+	float: right;
+	color: rgba(170, 170, 170, 0);
+}
+/* 表格代码   */
+.table{
+  border:1px solid #dadada00;
+  width: 100%;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: left;
+  width: 100%;
+}
+.th1,.th2{
+  width: 50%;
+}
+.th{
+  font-weight: 800;
+  background-color: white;
+  font-size: 28rpx;
+  color: #330e0e;
+}
+.icon {
+	width: 45rpx;
+	height: 45rpx;
+}
+.text{
+text-align: left;
+font-size: 40rpx;
+}
+.button{
+  text-align: right;
+}
+.back{
+ background-color:  #0c7ab9a8;
+ font-size: 30rpx;
+}

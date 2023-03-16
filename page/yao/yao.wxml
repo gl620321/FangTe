@@ -1,0 +1,19 @@
+<!--pages/yao/yao.wxml-->
+<!-- <text class="ziti">邀请好友</text> -->
+<view></view>
+<view></view>
+<image class="login-help-img" src="/imags/tupian/yaoq.png"></image>
+<view class="ziti">联系客服</view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view class="confirm-btn" bindtap="bind">
+            <text>进入客服平台</text>
+        </view>
+
